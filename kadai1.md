@@ -1,49 +1,38 @@
-# èª²é¡Œï¼‘ãƒ¬ãƒãƒ¼ãƒˆï¼ˆã‚µãƒ³ãƒ—ãƒ«ï¼‰
+#‰Û‘è1@ƒŒƒ|[ƒg
 
-æ¨™æº–ç”»åƒã€ŒLennaã€ã‚’åŸç”»åƒã¨ã™ã‚‹ï¼ã“ã®ç”»åƒã¯ç¸¦512ç”»åƒï¼Œæ¨ª512ç”»ç´ ã«ã‚ˆã‚‹æ­£æ–¹å½¢ã®ãƒ‡ã‚£ã‚¸ã‚¿ãƒ«ã‚«ãƒ©ãƒ¼ç”»åƒã§ã‚ã‚‹ï¼
+Œ´‰æ‘œ‚ğc200‰æ‘fA‰¡200‰æ‘f‚Ìdaymaretown_3.jpg‚Æ‚µA‰æ‘œ‚Ì•W–{‰»‚ğs‚Á‚½B
+ˆÈ‰º‚ÌƒR[ƒh‚É‚æ‚èA‰æ‘œ‚ğ‚»‚Ì‚Ü‚Ü•\¦‚µ‚½B
+@
+ORG=imread('daymaretown_3.jpg'); % Œ´‰æ‘œ‚Ì“ü—Í
+imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\¦
 
-ORG=imread('Lenna.png'); % åŸç”»åƒã®å…¥åŠ›  
-imagesc(ORG); axis image; % ç”»åƒã®è¡¨ç¤º
+‚Ü‚½A‚»‚ÌŒ‹‰Ê‚ğ}1‚Ö¦‚·B
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.1.png)  
+}1@Œ´‰æ‘œ‚Ì•\¦
 
-ã«ã‚ˆã£ã¦ï¼ŒåŸç”»åƒã‚’èª­ã¿è¾¼ã¿ï¼Œè¡¨ç¤ºã—ãŸçµæœã‚’å›³ï¼‘ã«ç¤ºã™ï¼
+‚±‚Ì‰æ‘œ‚ğ1/2ƒTƒ“ƒvƒŠƒ“ƒO‚·‚é‚½‚ßAORG‚Æ‚µ‚Ä“ü—Í‚µ‚½‰æ‘œ‚ğ1/2‚Ék¬‚µ‚½ŒãAŒ³‚Ì‘å‚«‚³‚Ö‚ÆŠg‘å‚µ‚½B
 
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/org_img.png)  
-å›³1 åŸç”»åƒ
+IMG = imresize(ORG,0.5); % ‰æ‘œ‚Ìk¬
+IMG2 = imresize(IMG,2,'box'); % ‰æ‘œ‚ÌŠg‘å
 
-åŸç”»åƒã‚’1/2ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã™ã‚‹ã«ã¯ï¼Œç”»åƒã‚’1/2å€ã«ç¸®å°ã—ãŸå¾Œï¼Œ2å€ã«æ‹¡å¤§ã™ã‚Œã°ã‚ˆã„ï¼ãªãŠï¼Œæ‹¡å¤§ã™ã‚‹éš›ã«ã¯ï¼Œå˜ç´”è£œé–“ã™ã‚‹ãŸã‚ã«ã€Œboxã€ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¨­å®šã™ã‚‹ï¼
+imagesc(IMG2); axis image;‚ÆÀs‚µA1/2ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚ğ•\¦‚µ‚½Œ‹‰Ê‚ÍA}2‚Ì’Ê‚è‚Æ‚È‚Á‚½
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.2.png)
+}2@1/2ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚Ì•\¦
 
-IMG = imresize(ORG,0.5); % ç”»åƒã®ç¸®å°  
-IMG2 = imresize(IMG,2,'box'); % ç”»åƒã®æ‹¡å¤§
+1/4ƒTƒ“ƒvƒŠƒ“ƒOˆÈ~‚ÍAk¬‚·‚é‰æ‘œ‚ğIMG‚É‚µ‚½“_‚ÆŠg‘å‚Ì”{”‚Ì‚İ‚ğ•ÏX‚µ‚½ˆ—‚ğŒJ‚è•Ô‚·‚±‚Æ‚É‚æ‚èÀŒ»‚µ‚½B
 
-1/2ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã®çµæœã‚’å›³ï¼’ã«ç¤ºã™ï¼
+IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
+IMG2 = imresize(IMG,4,'box'); % ‰æ‘œ‚ÌŠg‘å
+imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
 
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_1.png?raw=true)  
-å›³2 1/2ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°
+1/4‚©‚ç1/32‚Ü‚ÅƒTƒ“ƒvƒŠƒ“ƒO‚µ‚½Œ‹‰Ê‚ğA}3`6‚Ö¦‚·B
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.3.png)
+}3@1/4ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚Ì•\¦
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.4.png)
+}4@1/8ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚Ì•\¦
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.5.png)
+}5@1/16ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚Ì•\¦
+![Œ´‰æ‘œ](https://github.com/YukaMoritoki/lecture_image_processing/blob/master/image/kadai1/kadai1.6.png)
+}6@1/32ƒTƒ“ƒvƒŠƒ“ƒO‰æ‘œ‚Ì•\¦
 
-åŒæ§˜ã«åŸç”»åƒã‚’1/4ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã™ã‚‹ã«ã¯ï¼Œç”»åƒã‚’1/2å€ã«ç¸®å°ã—ãŸå¾Œï¼Œ2å€ã«æ‹¡å¤§ã™ã‚Œã°ã‚ˆã„ï¼ã™ãªã‚ã¡ï¼Œ
-
-IMG = imresize(ORG,0.5); % ç”»åƒã®ç¸®å°  
-IMG2 = imresize(IMG,2,'box'); % ç”»åƒã®æ‹¡å¤§
-
-ã¨ã™ã‚‹ï¼1/4ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã®çµæœã‚’å›³ï¼“ã«ç¤ºã™ï¼
-
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_2.png?raw=true)  
-å›³3 1/4ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°
-
-1/8ã‹ã‚‰1/32ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã¯ï¼Œ
-
-IMG = imresize(ORG,0.5); % ç”»åƒã®ç¸®å°  
-IMG2 = imresize(IMG,2,'box'); % ç”»åƒã®æ‹¡å¤§
-
-ã‚’ç¹°ã‚Šè¿”ã™ï¼ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã®çµæœã‚’å›³ï¼”ï½ï¼–ã«ç¤ºã™ï¼
-
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_3.png?raw=true)  
-å›³4 1/8ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°
-
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_4.png?raw=true)  
-å›³5 1/16ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°
-
-![åŸç”»åƒ](https://github.com/mackhasegawa/lecture_image_processing/blob/master/image/kadai1_5.png?raw=true)  
-å›³6 1/32ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°
-
-ã“ã®ã‚ˆã†ã«ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°å¹…ãŒå¤§ãããªã‚‹ã¨ï¼Œãƒ¢ã‚¶ã‚¤ã‚¯çŠ¶ã®ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°æ­ªã¿ãŒç™ºç”Ÿã™ã‚‹ï¼
+ˆÈã‚æ‚èA‰æ‘œ‚ğƒTƒ“ƒvƒŠƒ“ƒO‚·‚é‚±‚Æ‚É‚æ‚Á‚Ä‰æ‘œ‚Ì‰ğ‘œ“x‚ª‰º‚ª‚èAƒ‚ƒUƒCƒNó‚É‚È‚é‚±‚Æ‚ª‚í‚©‚Á‚½B
